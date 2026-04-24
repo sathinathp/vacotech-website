@@ -13,7 +13,7 @@ A premium, high-performance static website for VacoTech Consulting Inc.
 2. Go to **File Manager**.
 3. Navigate to the `public_html` directory.
 4. Upload all the files and folders in this project:
-   - `index.html`
+   - `home.html`
    - `about.html`
    - `solutions.html`
    - `case-studies.html`
