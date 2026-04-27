@@ -9,19 +9,20 @@
 </head>
 <body>
 
-    <nav id="navbar" class="scrolled">
+    <nav id="navbar">
         <div class="container nav-content">
-            <a href="home.html" class="logo"><img src="logo.png" alt="VacoTech Logo"></a>
+            <a href="home.html" class="logo">
+                <img src="logo.png" alt="VacoTech Logo">
+            </a>
             <ul class="nav-links">
-                
                 <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
                 <li><a href="industries.html">Industries</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="solutions.html">Services</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="careers.html">Careers</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Get Started</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us <i data-lucide="arrow-right" style="width: 16px;"></i></a>
         </div>
     </nav>
 
@@ -29,46 +30,72 @@
         <section>
             <div class="container">
                 <h1 style="font-size: 4rem; margin-bottom: 2rem; text-align: center;">Success Stories</h1>
-                <p style="text-align: center; color: var(--text-muted); max-width: 800px; margin: 0 auto 4rem; font-size: 1.25rem;">Explore how we've helped enterprises transform their operations through data intelligence.</p>
+                <p style="text-align: center; color: var(--on-surface-variant); max-width: 800px; margin: 0 auto 4rem; font-size: 1.25rem;">Explore how VacoTech has helped global enterprises transform their operations through strategic data intelligence and modern architecture.</p>
 
                 <div style="display: flex; flex-direction: column; gap: 4rem;">
-                    <!-- Case Study 1 -->
+                    <!-- Case Study 1: Finance -->
                     <div class="glass" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem; align-items: center;">
                         <div>
-                            <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem;">Enterprise Analytics</span>
-                            <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Global Retail Dashboard Integration</h2>
-                            <p style="color: var(--text-muted); margin-bottom: 2rem;">VacoTech built an enterprise-wide data platform that supports over 500+ dynamic dashboards across multiple departments, consolidating data from 12+ siloed sources.</p>
+                            <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem;">Financial Technology</span>
+                            <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Real-time Fraud Detection Architecture</h2>
+                            <p style="color: var(--on-surface-variant); margin-bottom: 2rem;">VacoTech implemented a high-speed Big Data platform using Apache Spark to automate the processing of 1.5B+ daily transactions, enabling sophisticated anti-fraud predictors that far outperform legacy systems.</p>
                             <div style="display: flex; gap: 2rem;">
                                 <div>
-                                    <h3 style="color: var(--primary);">500+</h3>
-                                    <p style="font-size: 0.875rem; color: var(--text-muted);">Dashboards</p>
+                                    <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem;">40%</h3>
+                                    <p style="font-size: 0.875rem; color: var(--on-surface-variant); text-transform: uppercase; letter-spacing: 0.1em;">Fraud Reduction</p>
                                 </div>
                                 <div>
-                                    <h3 style="color: var(--primary);">12+</h3>
-                                    <p style="font-size: 0.875rem; color: var(--text-muted);">Integrations</p>
+                                    <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem;">1.5B+</h3>
+                                    <p style="font-size: 0.875rem; color: var(--on-surface-variant); text-transform: uppercase; letter-spacing: 0.1em;">Daily Transactions</p>
                                 </div>
                             </div>
                         </div>
-                        <div style="background: var(--bg-dark); height: 300px; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.1);"></div>
+                        <div class="case-study-img-container">
+                            <img src="image/Real-time Fraud Detection Architecture.png" alt="Real-time Fraud Detection Architecture" class="case-study-img" onclick="openLightbox(this.src)">
+                        </div>
                     </div>
 
-                    <!-- Case Study 2 -->
+                    <!-- Case Study 2: Healthcare -->
                     <div class="glass" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem; align-items: center;">
-                        <div style="background: var(--bg-dark); height: 300px; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.1);"></div>
+                        <div class="case-study-img-container">
+                            <img src="image/AI-Powered Patient Capacity Planning.png" alt="AI-Powered Patient Capacity Planning" class="case-study-img" onclick="openLightbox(this.src)">
+                        </div>
                         <div>
-                            <span style="color: var(--secondary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem;">Real-time Intelligence</span>
-                            <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Supply Chain Optimization</h2>
-                            <p style="color: var(--text-muted); margin-bottom: 2rem;">We implemented a real-time analytics engine that improved decision speed by 80%, allowing the logistics team to respond to disruptions in minutes rather than days.</p>
+                            <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem;">Healthcare Operations</span>
+                            <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">AI-Powered Patient Capacity Planning</h2>
+                            <p style="color: var(--on-surface-variant); margin-bottom: 2rem;">By engineering robust data pipelines for a major healthcare provider, VacoTech enabled predictive capacity planning that precisely matched resources to patient needs in real-time.</p>
                             <div style="display: flex; gap: 2rem;">
                                 <div>
-                                    <h3 style="color: var(--secondary);">80%</h3>
-                                    <p style="font-size: 0.875rem; color: var(--text-muted);">Faster Response</p>
+                                    <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem;">15.3%</h3>
+                                    <p style="font-size: 0.875rem; color: var(--on-surface-variant); text-transform: uppercase; letter-spacing: 0.1em;">Lower Wait Times</p>
                                 </div>
                                 <div>
-                                    <h3 style="color: var(--secondary);">Real-time</h3>
-                                    <p style="font-size: 0.875rem; color: var(--text-muted);">Latency</p>
+                                    <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem;">15%</h3>
+                                    <p style="font-size: 0.875rem; color: var(--on-surface-variant); text-transform: uppercase; letter-spacing: 0.1em;">Readmission Drop</p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 3: Retail -->
+                    <div class="glass" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; padding: 4rem; align-items: center;">
+                        <div>
+                            <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.875rem;">Retail Transformation</span>
+                            <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem;">Omnichannel Revenue Acceleration</h2>
+                            <p style="color: var(--on-surface-variant); margin-bottom: 2rem;">VacoTech built a unified data analytics layer on Snowflake, enabling near real-time customer personalization and inventory optimization during peak Black Friday events.</p>
+                            <div style="display: flex; gap: 2rem;">
+                                <div>
+                                    <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem;">$150M+</h3>
+                                    <p style="font-size: 0.875rem; color: var(--on-surface-variant); text-transform: uppercase; letter-spacing: 0.1em;">Revenue Lift</p>
+                                </div>
+                                <div>
+                                    <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 0.5rem;">30%</h3>
+                                    <p style="font-size: 0.875rem; color: var(--on-surface-variant); text-transform: uppercase; letter-spacing: 0.1em;">Infra Cost Saving</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-study-img-container">
+                            <img src="image/Omnichannel Revenue Acceleration.png" alt="Omnichannel Revenue Acceleration" class="case-study-img" onclick="openLightbox(this.src)">
                         </div>
                     </div>
                 </div>
@@ -78,43 +105,64 @@
 
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; padding-bottom: 4rem;">
                 <div>
-                    <span class="footer-logo">VACOTECH</span>
-                    <p style="color: var(--text-muted); max-width: 300px;">Enabling organizations to unlock the full value of their data through scalable systems and reporting.</p>
+                    <a href="home.html" class="logo" style="margin-bottom: 2rem; display: block;">
+                        <img src="logo.png" alt="VacoTech Logo">
+                    </a>
+                    <p style="color: var(--on-surface-variant); max-width: 400px;">A technology solutions and consulting services firm that aims to provide handheld support with a comprehensive array of Digital Enterprise Services.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1.5rem; font-size: 1rem;">Company</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html" style="color: var(--on-surface-variant); text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="careers.html" style="color: var(--on-surface-variant); text-decoration: none;">Careers</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="contact.html" style="color: var(--on-surface-variant); text-decoration: none;">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Solutions</h4>
-                    <ul>
-                        <li><a href="solutions.html">Data Engineering</a></li>
-                        <li><a href="solutions.html">Business Intelligence</a></li>
-                        <li><a href="solutions.html">Cloud Platforms</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="mailto:info@vacotechinc.com">Email Us</a></li>
+                <div>
+                    <h4 style="color: white; margin-bottom: 1.5rem; font-size: 1rem;">Connect</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.8rem;"><a href="#" style="color: var(--on-surface-variant); text-decoration: none;">LinkedIn</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#" style="color: var(--on-surface-variant); text-decoration: none;">Twitter</a></li>
                     </ul>
                 </div>
             </div>
-            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; color: var(--text-muted); font-size: 0.875rem;">
-                <p>&copy; 2026 VacoTech Consulting Inc. All rights reserved.</p>
+            <div style="padding-top: 2rem; border-top: 1px solid var(--outline-variant); text-align: center; color: var(--on-surface-variant); font-size: 0.85rem;">
+                &copy; 2026 VacoTech Consulting Inc. All rights reserved.
             </div>
         </div>
     </footer>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close"><i data-lucide="x" style="width: 32px; height: 32px;"></i></button>
+        <img id="lightbox-img" src="" alt="Case Study Image Full Screen">
+    </div>
+
     <script src="js/main.js"></script>
+    <script>
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close on Esc key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        lucide.createIcons();
+    </script>
 </body>
 </html>
 

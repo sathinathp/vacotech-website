@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,50 +8,61 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
-    <nav id="navbar" class="scrolled">
+    <nav id="navbar">
         <div class="container nav-content">
-            <a href="home.html" class="logo"><img src="logo.png" alt="VacoTech Logo"></a>
+            <a href="home.html" class="logo">
+                <img src="logo.png" alt="VacoTech Logo">
+            </a>
             <ul class="nav-links">
-                
                 <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
                 <li><a href="industries.html">Industries</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="solutions.html">Services</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="careers.html">Careers</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Get Started</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us <i data-lucide="arrow-right"
+                    style="width: 16px;"></i></a>
         </div>
     </nav>
 
     <main style="padding-top: 100px;">
         <section>
             <div class="container">
-                <h1 style="font-size: 4rem; margin-bottom: 2rem; text-align: center;">Our Solutions</h1>
-                <p style="text-align: center; color: var(--on-surface-variant); max-width: 800px; margin: 0 auto 4rem; font-size: 1.25rem;">We provide comprehensive data strategies and technical implementations to power your business intelligence.</p>
+                <h1 style="font-size: 4rem; margin-bottom: 2rem; text-align: center;">Strategic IT Solutions</h1>
+                <p
+                    style="text-align: center; color: var(--on-surface-variant); max-width: 800px; margin: 0 auto 4rem; font-size: 1.25rem;">
+                    We provide a comprehensive array of Digital Enterprise Services to bridge the gap between complex
+                    infrastructure and strategic business growth.</p>
 
                 <div class="grid-4">
-                    <div class="glass" id="engineering">
-                        <i data-lucide="layers"></i>
-                        <h3>Data Platform Implementation</h3>
-                        <p style="color: var(--on-surface-variant);">Building the foundation for your data ecosystem using Snowflake, Databricks, and modern ETL/ELT pipelines.</p>
-                    </div>
-                    <div class="glass" id="bi">
-                        <i data-lucide="pie-chart"></i>
-                        <h3>Analytics Implementation</h3>
-                        <p style="color: var(--on-surface-variant);">End-to-end dashboard development and KPI tracking systems for real-time visibility.</p>
+                    <div class="glass">
+                        <i data-lucide="cloud" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3>Enterprise Cloud Fabric</h3>
+                        <p style="color: var(--on-surface-variant);">Implementing unified data fabric ecosystems that
+                            reduce IT infrastructure and storage costs by 30% while improving query performance by 75%.
+                        </p>
                     </div>
                     <div class="glass">
-                        <i data-lucide="settings"></i>
-                        <h3>Managed Data Services</h3>
-                        <p style="color: var(--on-surface-variant);">Continuous monitoring, optimization, and scaling of your data infrastructure by our expert team.</p>
+                        <i data-lucide="bar-chart-3" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3>Real-time Intelligence</h3>
+                        <p style="color: var(--on-surface-variant);">Next-gen analytics platforms built on GCP and
+                            Snowflake that improve decision speed by 80%, enabling 40-50% faster campaign launches.</p>
                     </div>
                     <div class="glass">
-                        <i data-lucide="briefcase"></i>
-                        <h3>Data Strategy Advisory</h3>
-                        <p style="color: var(--on-surface-variant);">Strategic roadmap development to ensure your data investments align with business goals and AI readiness.</p>
+                        <i data-lucide="code" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3>Scalable Data Engineering</h3>
+                        <p style="color: var(--on-surface-variant);">Building high-speed platforms using Apache Spark
+                            capable of processing 1.5B+ daily transactions with automated monitoring.</p>
+                    </div>
+                    <div class="glass">
+                        <i data-lucide="brain-circuit" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
+                        <h3>Predictive ML Operations</h3>
+                        <p style="color: var(--on-surface-variant);">Advanced AI pipelines for capacity planning and
+                            fraud prevention, delivering 15% reduction in risk and $150M+ in revenue lift.</p>
                     </div>
                 </div>
             </div>
@@ -60,24 +72,43 @@
             <div class="container">
                 <div class="hero-grid" style="grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
                     <div>
-                        <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">Industries We Serve</h2>
-                        <p style="color: var(--on-surface-variant); margin-bottom: 2rem;">We bring deep domain expertise to various sectors, ensuring tailored solutions for unique industry challenges.</p>
+                        <h2 style="font-size: 3rem; margin-bottom: 1.5rem;">The VacoTech Advantage</h2>
+                        <p style="color: var(--on-surface-variant); margin-bottom: 2rem;">We leverage the modern data
+                            stack to bridge the gap between complex infrastructure and high-impact business growth.</p>
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">Finance</div>
-                            <div style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">Healthcare</div>
-                            <div style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">Retail</div>
-                            <div style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">Technology</div>
+                            <div
+                                style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">
+                                Modern Data Stack</div>
+                            <div
+                                style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">
+                                Handheld Support</div>
+                            <div
+                                style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">
+                                TCO Optimization</div>
+                            <div
+                                style="padding: 1rem; border-left: 3px solid var(--primary); background: rgba(16,185,129,0.05);">
+                                Strategic Consulting</div>
                         </div>
                     </div>
                     <div class="glass" style="padding: 2rem;">
-                        <h3 style="margin-bottom: 1.5rem;">Platform Expertise</h3>
+                        <h3 style="margin-bottom: 1.5rem;">Technical Expertise</h3>
                         <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-                            <span style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Snowflake</span>
-                            <span style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Databricks</span>
-                            <span style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Power BI</span>
-                            <span style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Tableau</span>
-                            <span style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">dbt</span>
-                            <span style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Azure Synapse</span>
+                            <span
+                                style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Snowflake</span>
+                            <span
+                                style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Databricks</span>
+                            <span
+                                style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Apache
+                                Spark</span>
+                            <span
+                                style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">GCP
+                                / AWS / Azure</span>
+                            <span
+                                style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">dbt
+                                Core</span>
+                            <span
+                                style="padding: 0.5rem 1rem; background: var(--surface); border-radius: 2rem; font-size: 0.875rem; border: 1px solid var(--outline-variant);">Python
+                                / Scala</span>
                         </div>
                     </div>
                 </div>
@@ -89,27 +120,36 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; padding-bottom: 4rem;">
                 <div>
-                    <a href="home.html" class="logo" style="margin-bottom: 2rem; display: block;"><img src="logo.png" alt="VacoTech Logo"></a>
-                    <p style="color: var(--on-surface-variant); max-width: 400px;">Enabling organizations to unlock the full value of their data through scalable systems and reporting.</p>
+                    <a href="home.html" class="logo" style="margin-bottom: 2rem; display: block;">
+                        <img src="logo.png" alt="VacoTech Logo">
+                    </a>
+                    <p style="color: var(--on-surface-variant); max-width: 400px;">A technology solutions and consulting
+                        services firm that aims to provide handheld support with a comprehensive array of Digital
+                        Enterprise Services.</p>
                 </div>
                 <div>
                     <h4 style="color: white; margin-bottom: 1.5rem; font-size: 1rem;">Company</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.8rem;"><a href="about.html" style="color: var(--on-surface-variant); text-decoration: none;">About Us</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="careers.html" style="color: var(--on-surface-variant); text-decoration: none;">Careers</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="contact.html" style="color: var(--on-surface-variant); text-decoration: none;">Contact</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html"
+                                style="color: var(--on-surface-variant); text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="careers.html"
+                                style="color: var(--on-surface-variant); text-decoration: none;">Careers</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="contact.html"
+                                style="color: var(--on-surface-variant); text-decoration: none;">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 style="color: white; margin-bottom: 1.5rem; font-size: 1rem;">Connect</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 0.8rem;"><a href="#" style="color: var(--on-surface-variant); text-decoration: none;">LinkedIn</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="#" style="color: var(--on-surface-variant); text-decoration: none;">Twitter</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="mailto:info@vacotechinc.com" style="color: var(--on-surface-variant); text-decoration: none;">Email Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#"
+                                style="color: var(--on-surface-variant); text-decoration: none;">LinkedIn</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#"
+                                style="color: var(--on-surface-variant); text-decoration: none;">Twitter</a></li>
                     </ul>
                 </div>
             </div>
-            <div style="padding-top: 2rem; border-top: 1px solid var(--outline-variant); text-align: center; color: var(--on-surface-variant); font-size: 0.85rem;">
+            <div
+                style="padding-top: 2rem; border-top: 1px solid var(--outline-variant); text-align: center; color: var(--on-surface-variant); font-size: 0.85rem;">
                 &copy; 2026 VacoTech Consulting Inc. All rights reserved.
             </div>
         </div>
@@ -117,5 +157,5 @@
 
     <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>
